@@ -9,3 +9,9 @@
  * 
  * We will also pass strings with special symbols, such as 2A3*3a2, 2A3 3a2, and 2_A3*3#A2.
  */ 
+
+function palindrome(str) {
+    return true;
+  }
+  
+  palindrome("eye");
