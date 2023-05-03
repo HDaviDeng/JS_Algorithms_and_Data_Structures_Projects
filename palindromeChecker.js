@@ -11,8 +11,14 @@
  */ 
 
 function palindrome(str) {
-    str = str.toLowerCase().replace(/[^0-9a-z]/gi, "");
+  //Convert the string to lowercase and remove all non-alphanumeric characters
+  str = str.toLowerCase().replace(/[^0-9a-z]/gi, "");
+  //Check if the string is equal to its reverse
     return str === str.split("").reverse().join("");
   }
   
   palindrome("eye");
+
+  /**
+   * This function works in a similar way to the Python version. It converts the input string to lowercase and removes all non-alphanumeric characters using a regular expression. Then, it checks whether the resulting string is equal to its reverse by splitting the string into an array of characters, reversing the array, and then joining it back into a string.
+   */

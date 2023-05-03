@@ -21,3 +21,9 @@ function rot13(str) {
   }
   
   rot13("SERR PBQR PNZC");
+
+/**
+ * This function iterates through each character in the input string, checks if it is an uppercase alphabetic character (ASCII code between 65 and 90), and then applies the ROT13 shift of 13 places. If the character is not an uppercase alphabetic character, it is simply added to the decoded string as is.
+
+To apply the ROT13 shift, we first subtract 65 from the character code to convert it to a zero-based index, then add 13 to shift it, and finally use the modulus operator to wrap it around if it goes beyond the end of the alphabet. Finally, we add 65 back to convert it back to an ASCII code.
+ */

@@ -20,3 +20,17 @@ function telephoneCheck(str) {
   }
   
   telephoneCheck("555-555-5555");
+
+  /**
+   * This function uses a regular expression to define a pattern for valid US phone numbers. The pattern consists of:
+
+^(1\s?)?: an optional country code of 1, followed by an optional space.
+(\(\d{3}\)|\d{3}): either a three-digit area code in parentheses or just three digits.
+[-\s]?: an optional separator of either a hyphen or a space.
+\d{3}: three digits for the phone number prefix.
+[-\s]?: another optional separator.
+\d{4}$: four digits for the phone number suffix.
+
+The test() method of the regular expression object is then called on the input string to see if it matches the pattern. If it does, the function returns true. Otherwise, it returns false.
+
+   */
