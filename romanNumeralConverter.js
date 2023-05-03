@@ -46,3 +46,7 @@ function convertToRoman(num) {
    }
    
    convertToRoman(36);
+
+   /**
+    * This function uses an object romanNumeralMap to map the Roman numerals to their corresponding values. It then initializes an empty string result and iterates through each numeral in the map, adding it to result as many times as possible while subtracting the corresponding value from num. Finally, it returns the resulting Roman numeral.
+    */
